@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
 }
 
 class LoginAdmin extends StatefulWidget {
-  const LoginAdmin(String , {super.key});
+  const LoginAdmin(String, {super.key});
 
   @override
   State<LoginAdmin> createState() => _LoginAdminState();
@@ -54,11 +54,7 @@ class _LoginAdminState extends State<LoginAdmin> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Center(
-                child: Image(
-                  image: AssetImage('asset/images/my.png')
-                ),
-              ),
+              Center(child: Image(image: AssetImage('asset/myimage.png'))),
               // JUDUL
               Container(
                 width: double.infinity,
