@@ -54,6 +54,7 @@ class _LoginAdminState extends State<LoginAdmin> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              
               // JUDUL
               Container(
                 width: double.infinity,
