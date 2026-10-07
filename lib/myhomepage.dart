@@ -19,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Center(
             child: Container(
               width: 300,
-              color: Color.fromARGB(197, 0, 0, 0),
+              color: Color.fromARGB(255, 252, 252, 252),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: 'Masukan Nama',
