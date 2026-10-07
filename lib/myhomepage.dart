@@ -16,6 +16,22 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Color.fromARGB(255, 253, 193, 193),
       body:Column(
         children:[
+          Center(
+            child: Container(
+              width: 300,
+              color: Color.fromARGB(197, 0, 0, 0),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: 'Masukan Nama',
+                  border: OutlineInputBorder(),
+                ),
+              controller: inputNama,
+              onSubmitted: (values) {
+                inputNama.text = values;
+              },
+              ),
+            ),
+            ),
           TextField(
             
             controller: inputNama,
