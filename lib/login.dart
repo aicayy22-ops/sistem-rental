@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sistemrental/myhomepage.dart';
+import 'package:sistemrental/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,18 +29,13 @@ class _LoginAdminState extends State<LoginAdmin> {
   final passwordController = TextEditingController();
 
   void login() {
-    if (userController.text == "admin" &&
-        passwordController.text == "12345") {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text("Login berhasil"),
-        ),
-      );
+    if (userController.text == "admin" && passwordController.text == "12345") {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text("Login berhasil")));
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text("Username atau password salah"),
-        ),
+        const SnackBar(content: Text("Username atau password salah")),
       );
     }
   }
@@ -55,15 +50,11 @@ class _LoginAdminState extends State<LoginAdmin> {
           padding: const EdgeInsets.only(bottom: 50),
           decoration: BoxDecoration(
             color: const Color(0xFFF3DADA),
-            border: Border.all(
-              color: Colors.red.shade800,
-              width: 10,
-            ),
+            border: Border.all(color: Colors.red.shade800, width: 10),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-
               // JUDUL
               Container(
                 width: double.infinity,
@@ -72,10 +63,7 @@ class _LoginAdminState extends State<LoginAdmin> {
                 child: const Text(
                   "LOGIN ADMIN",
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
               ),
 
@@ -166,10 +154,7 @@ class _LoginAdminState extends State<LoginAdmin> {
                 ),
                 child: const Text(
                   "LOGIN",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
             ],
