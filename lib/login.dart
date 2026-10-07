@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sistemrental/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const LoginAdmin(),
+      home: const LoginAdmin("Flutter Demo"),
     );
   }
 }
 
 class LoginAdmin extends StatefulWidget {
-  const LoginAdmin({super.key});
+  const LoginAdmin(String , {super.key});
 
   @override
   State<LoginAdmin> createState() => _LoginAdminState();
