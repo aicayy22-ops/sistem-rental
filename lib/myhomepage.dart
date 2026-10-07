@@ -13,7 +13,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(title: Text("sistemrental")),
       backgroundColor: Color.fromARGB(255, 253, 193, 193),
-      body:Column()
+      body:Column(
+        
+      )
     );
   }
 }
