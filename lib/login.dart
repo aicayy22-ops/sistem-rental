@@ -31,7 +31,7 @@ class _LoginAdminState extends State<LoginAdmin> {
     if (userController.text.isEmpty || passwordController.text.isEmpty) {
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(const SnackBar(content: Text("Login berhasil")));
+      ).showSnackBar(const SnackBar(content: Text("Username dan password tidak boleh kosong")));
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Username atau password salah")),
