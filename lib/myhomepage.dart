@@ -32,13 +32,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             ),
-          TextField(
-            
-            controller: inputNama,
-            onSubmitted: (values) {
-              inputNama.text = values;
-            },
-          ),
           ElevatedButton(
             child: Text("Tampilkan Nama"),
             onPressed: () {
