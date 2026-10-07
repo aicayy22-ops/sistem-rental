@@ -54,6 +54,11 @@ class _LoginAdminState extends State<LoginAdmin> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              Center(
+                child: Image(
+                  image: AssetImage('asset/images/my.png')
+                ),
+              ),
               // JUDUL
               Container(
                 width: double.infinity,
