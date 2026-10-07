@@ -17,6 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body:Column(
         children:[
           TextField(
+            
             controller: inputNama,
             onSubmitted: (values) {
               inputNama.text = values;
