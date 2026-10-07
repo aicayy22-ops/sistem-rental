@@ -28,7 +28,7 @@ class _LoginAdminState extends State<LoginAdmin> {
   final passwordController = TextEditingController();
 
   void login() {
-    if (userController.text == "admin" && passwordController.text == "12345") {
+    if (userController.text.isEmpty || passwordController.text.isEmpty) {
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(const SnackBar(content: Text("Login berhasil")));
